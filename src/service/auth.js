@@ -36,7 +36,7 @@ export const signInUser = async (data) => {
     console.log("rESSS:", res);
     return res.data;
   } catch (error) {
-    toast.error("error: ", error);
+    toast.error("error: ", error?.response?.data?.message);
     toast.error(error.response.data.message);
     error.errors = error.response.data;
     return error;
