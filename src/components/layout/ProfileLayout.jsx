@@ -28,6 +28,7 @@ export const ProfileLayout = () => {
                             <nav className="flex gap-x-4 -mb-px">
                               <NavLink
                                 to="/profile"
+                                relative="path"
                                 className={({ isActive, isPending }) =>
                                   classNames(
                                     isActive

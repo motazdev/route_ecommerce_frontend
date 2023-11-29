@@ -175,6 +175,7 @@ export function Navbar() {
                 {!auth?.accessToken ? (
                   <Link
                     to="/login"
+                    relative="path"
                     className="ml-6 rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Login
@@ -208,6 +209,7 @@ export function Navbar() {
                           {({ active }) => (
                             <Link
                               to="/profile"
+                              relative="path"
                               className={classNames(
                                 active ? "bg-gray-100" : "",
                                 "block px-4 py-2 text-sm text-gray-700"

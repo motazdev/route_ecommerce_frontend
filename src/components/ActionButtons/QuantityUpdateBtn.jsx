@@ -34,9 +34,6 @@ export const QuantityUpdateBtn = ({ product }) => {
           };
         });
       });
-    // .catch((err) => {
-    //   // toast.error("")
-    // });
   };
   return (
     <div className="updatebtn flex flex-row gap-0">
@@ -44,14 +41,6 @@ export const QuantityUpdateBtn = ({ product }) => {
         disabled={isDisabled ? true : false}
         to="/#"
         className=" disabled:cursor-not-allowed flex items-center justify-center rounded-bl-md rounded-tl-md border border-transparent bg-indigo-600 p-1 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-        // onClick={(e) => {
-        //   if (countQ < product.availableItems) {
-        //     setCountQ((prev) => prev + 1);
-        //     console.log("e event: ", countQ);
-        //   } else {
-        //     toast.error(`Only ${product.availableItems} is available`);
-        //   }
-        // }}
         onClick={async () => {
           setIsDisabled(true);
           try {

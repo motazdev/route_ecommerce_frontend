@@ -147,13 +147,14 @@ export default function Navbar() {
                   <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                     <Link
                       to="/login"
+                      relative="path"
                       className="text-sm font-medium text-gray-700 hover:text-gray-800"
                     >
                       Sign in
                     </Link>
                     <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                     <Link
-                      to="signup"
+                      to="register"
                       className="text-sm font-medium text-gray-700 hover:text-gray-800"
                     >
                       Create account
@@ -197,6 +198,7 @@ export default function Navbar() {
                           {({ active }) => (
                             <Link
                               to="/profile"
+                              relative="path"
                               className={classNames(
                                 active ? "bg-gray-100" : "",
                                 "block px-4 py-2 text-sm text-gray-700"
