@@ -109,7 +109,7 @@ export const HeroSection = () => {
                 <SwiperSlide key={categ._id} className="w-[300px]">
                   <Link
                     className="flex flex-col justify-center items-center"
-                    to={categ.slug}
+                    to={`/category/${categ.slug}`}
                   >
                     <img
                       className="rounded-full h-[60px] w-[60px] md:h-[100px] md:w-[100px]"
